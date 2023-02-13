@@ -1,0 +1,5 @@
+node_modules
+/log/*.log*
+/config/config.json  
+/config/db.config.js
+/config/open_weather_api_config.js
