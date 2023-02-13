@@ -95,6 +95,9 @@ module.exports = (sequelize, DataTypes) => {
         return iconMapping[this.weatherIconCode]
       }
     },
+    lang: {
+      type: DataTypes.STRING
+    },
     createdAt: {
       allowNull: false,
       type: DataTypes.DATE

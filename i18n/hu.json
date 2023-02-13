@@ -1,0 +1,21 @@
+{
+  "views": {
+    "index": {
+      "title": "Időjárás"
+    },
+    "form": {
+      "welcome": "Üdvözöllek! Melyik város időjárására vagy kíváncsi?"
+    }
+  },
+  "models": {
+    "weather": {
+      "pressure": "Légnyomás",
+      "humidity": "Páratartalom",
+      "wind": "Szél",
+      "cloudiness": "Felhőzet"
+    }
+  },
+ "units": {
+   "temperature": "C"
+ }
+}

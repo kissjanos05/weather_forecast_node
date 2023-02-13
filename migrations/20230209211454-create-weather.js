@@ -14,7 +14,7 @@ module.exports = {
         allowNull: false
       },
       temp: {
-        type: Sequelize.FLOAT(3,2)
+        type: Sequelize.FLOAT(5,2)
       },
       pressure: {
         type: Sequelize.INTEGER,

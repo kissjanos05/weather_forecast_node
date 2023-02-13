@@ -4,7 +4,7 @@ block content
 
   .row
     .col-lg-12.text-center
-      h3 Üdvözöllek! Melyik város időjárására vagy kíváncsi?
+      h3= i18n.views.form.welcome
   form.row.row-cols-md-auto.g-3.align-items-center.justify-content-md-center(action="/weather", method="GET")
     .col-8
       select.form-select(name="city_id")

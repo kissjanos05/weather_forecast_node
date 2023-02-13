@@ -1,0 +1,21 @@
+{
+  "views": {
+    "index": {
+      "title": "Weather"
+    },
+    "form": {
+      "welcome": "Welcome! Which city are you wondering about the weather?"
+    }
+  },
+   "models": {
+    "weather": {
+      "pressure": "Pressure",
+      "humidity": "Humidity",
+      "wind": "Wind",
+      "cloudiness": "Cloudiness"
+    }
+  },
+ "units": {
+   "temperature": "F"
+ }
+}
