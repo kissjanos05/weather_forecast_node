@@ -1,0 +1,44 @@
+extends index.pug
+
+block content
+
+  .row
+    .col-lg-6
+      .card
+        .card-body
+          .card-title
+            .row
+              .col-lg-6
+                h2
+                  i.bi-geo-alt
+                  =city.name
+                i.bi-pin-map.text-muted
+                small.text-muted #{city.lon}, #{city.lat}
+              .col-lg-6.text-end
+                small.text-muted
+                  =weather.formattedCreatedAt
+          .card-text
+            .row
+              .col-lg-3
+                i(class=weather.iconClass style="font-size: 5rem;")
+                br
+                =weather.weatherDescription
+              .col-lg-3
+                ol.list-group.list-group-flush
+                  li.list-group-item
+                    .text-muted Légnyomás
+                    .fw-bold #{weather.pressure} hPa
+                  li.list-group-item
+                    .text-muted Páratartalom
+                    .fw-bold #{weather.humidity} %
+              .col-lg-3
+                ol.list-group.list-group-flush
+                  li.list-group-item
+                    .text-muted Szél
+                    .fw-bold #{weather.formattedWindDeg} #{Math.round(weather.windSpeed)} km/h
+                  li.list-group-item
+                    .text-muted Felhőzet
+                    .fw-bold #{weather.cloudiness} %
+              .col-lg-3
+                p(style="font-size: 5rem;") #{Math.round(weather.temp)}&deg;
+

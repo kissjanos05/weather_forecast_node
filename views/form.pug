@@ -1,0 +1,15 @@
+extends index.pug
+
+block content
+
+  .row
+    .col-lg-12.text-center
+      h3 Üdvözöllek! Melyik város időjárására vagy kíváncsi?
+  form.row.row-cols-md-auto.g-3.align-items-center.justify-content-md-center(action="/weather", method="GET")
+    .col-8
+      select.form-select(name="city_id")
+        each city in cities
+          option(value=city.id) #{city.name}
+    .col-4
+      button.btn.btn-dark(type="submit")
+        i.bi-search
