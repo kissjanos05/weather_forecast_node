@@ -8,7 +8,6 @@ const logger = require('./logger')
 const cookieParser = require('cookie-parser');
 const i18n = require("i18n-express");
 
-
 app.set('view engine', 'pug');
 app.set('views','./views');
 

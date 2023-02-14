@@ -1,7 +1,3 @@
-//A Celsius értéket oszd el 5-tel (C/5).
-//Az így kapott értéket szorozd meg 9-cel (C/5*9).
-//A kapott értékhez adj hozzá 32-t, és megkaptad a Fahrenheit értéket (F=C/5*9+32).
-
 'use strict';
 const moment = require('moment')
 moment.locale('hu')
